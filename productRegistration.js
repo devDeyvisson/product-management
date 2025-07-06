@@ -26,7 +26,7 @@ function listProduct() {
 
   products.forEach((product) => {
     console.log(
-      `Id: ${product.id}, nome: ${product.name}, categoria: ${product.category}, preço: ${product.price}, quantidade em estoque: ${product.stock}`
+      `Id: ${product.id}, nome: ${product.name}, categoria: ${product.category}, preço: R$ ${product.price}, quantidade em estoque: ${product.stock}`
     );
   });
 }
@@ -130,7 +130,7 @@ function displaySearchResult(resultList, search) {
   if (resultList.length > 0) {
     resultList.forEach((product) => {
       console.log(
-        `Id: ${product.id}, nome: ${product.name}, categoria: ${product.category}, preço: ${product.price}, quantidade em estoque: ${product.stock}`
+        `Id: ${product.id}, nome: ${product.name}, categoria: ${product.category}, preço: R$ ${product.price}, quantidade em estoque: ${product.stock}`
       );
     });
     return;
